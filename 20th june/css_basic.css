@@ -1,0 +1,37 @@
+.box{
+    width: 300px;
+    height: 150px;
+    background-color: lightblue ;
+    border: 2px solid navy;
+}
+.box p{
+    color: darkblue;
+    font-size: 16px;
+}
+#sub-btn{
+    background-color: red;
+}
+#send-btn{
+    background-color: green;
+}
+#trans-btn{
+    background-color: yellow;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    border: 2px dashed brown;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient( blue , purple);
+    border: 1px solid gray;
+}
