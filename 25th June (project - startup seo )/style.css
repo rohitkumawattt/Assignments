@@ -505,6 +505,7 @@ textarea::placeholder{
     border: none;
     background: #5702e4;
     color: white;
+    cursor: pointer;
 }
 .contact-us{
     width: 100%;
