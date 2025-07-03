@@ -123,13 +123,13 @@ console.log(
 
 
 console.log("\n--- 5. Nested Loops (Without Patterns) ---");
-console.log("Pairs (i, j) where i and j go from 1 to 3:");
+console.log("Pairs (i, j) : ");
 for (let i = 1; i <= 3; i++) {
   for (let j = 1; j <= 3; j++) {
     console.log(`(${i}, ${j})`);
   }
 }
-console.log("\nCombinations (a, b) where a + b = 5 (1 ≤ a, b ≤ 4):");
+console.log("\nCombinations (a, b) where a + b = 5 : ");
 for (let a = 1; a <= 4; a++) {
   for (let b = 1; b <= 4; b++) {
     if (a + b === 5) {
@@ -173,7 +173,6 @@ let numToReverse = 123;
 let originalNumToReverse = numToReverse;
 let reversedNumber = 0;
 let tempNumToReverse = Math.abs(numToReverse);
-
 while (tempNumToReverse > 0) {
   let digit = tempNumToReverse % 10;
   reversedNumber = reversedNumber * 10 + digit;

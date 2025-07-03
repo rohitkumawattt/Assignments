@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
+}
+
+body {
     background: #1f2122;
     color: white;
 }
@@ -169,7 +173,90 @@ main {
     overflow: hidden;
     cursor: pointer;
 }
-.intro button:hover{
+
+.intro button:hover {
     background-color: #fff;
     color: #e75e8d;
+}
+
+.popular-games {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #1f2122;
+    border-radius: 23px;
+}
+
+.popular-games .popular-game-title {
+    color: #ec6090;
+    font-size: 34px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.popular-games .popular-game-title span {
+    color: #fff;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.game-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.game-row .card {
+    background-color: #27292a;
+    padding: 30px 15px;
+    border-radius: 23px;
+    width: 23%;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 23px;
+
+}
+
+.card h4 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    background: transparent;
+}
+
+.card h4 span {
+    color: #666;
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+}
+
+.card ul {
+    float: right;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.card ul li {
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+}
+.card ul li:last-child{
+    margin-top: 5px;
+}
+.star {
+    color: yellow;
+}
+
+.download {
+    color: #ec6090;
 }

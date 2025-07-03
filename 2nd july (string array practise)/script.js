@@ -118,12 +118,12 @@ SumEven([1,2,3,4,5,6,7,8,9])
 
 //question 5 
 
-function groupByType(arr) {
+function groupByType(Myarr) {
     let group = {};
-    arr.forEach(i => {
+    Myarr.forEach(i => {
         let char = i;
         let type = typeof char;
-        if (!group[type]) {
+        if (!group[type]){
             group[type] = []
         } else {
             group[type].push(char)
