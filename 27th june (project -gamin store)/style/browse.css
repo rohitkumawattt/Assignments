@@ -132,95 +132,46 @@ main {
     padding: 60px;
 }
 
-.intro {
-    padding: 80px 60px;
-    width: 690px;
-    background: transparent;
+.featured-download {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
-.intro p {
-    margin-bottom: 25px;
-    font-size: 1.6rem;
-    background: transparent;
-}
-
-.intro h4 span {
-    color: #e75e8d;
-    background: transparent;
-}
-
-.intro h4 {
-    font-size: 45px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    background: transparent;
-}
-
-.intro button {
-    outline: none;
-    border: none;
-    font-size: 14px;
-    background-color: #e75e8d;
-    padding: 12px 30px;
-    display: inline-block;
-    border-radius: 25px;
-    font-weight: 400;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-.intro button a{
-    color: white;
-    text-decoration: none;
-}
-
-.intro button:hover {
-    background-color: #fff;
-    color: #e75e8d;
-}
-
-.popular-games {
-    margin-top: 60px;
+.featured-game {
+    width: 65%;
+    height: 567px;
+    background-color: #1F2122;
     padding: 30px;
-    background-color: #1f2122;
-    border-radius: 23px;
-    position: relative;
+    border-radius: 20px;
 }
 
-.popular-game-title {
+.games {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+h4 {
     color: #ec6090;
     font-size: 34px;
     text-decoration: none;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 
-.popular-game-title span {
+h4 span {
     color: #fff;
     font-style: normal;
     text-decoration: underline;
 }
 
-.game-row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-}
-
-.game-row .card {
-    background-color: #27292a;
-    padding: 30px 15px;
-    border-radius: 23px;
-    width: 23%;
-
-}
-
 .card {
-    margin-bottom: 30px;
-
+    width: 218px;
+    height: 100%;
 }
 
 .card img {
@@ -235,6 +186,7 @@ main {
     margin-bottom: 0px;
     display: inline-block;
     background: transparent;
+    color: white;
 }
 
 .card h4 span {
@@ -272,70 +224,50 @@ main {
     color: #ec6090;
 }
 
-.discover-btn {
-    position: absolute;
-    bottom: -10px;
-    left: calc(50% - 80px);
-    font-size: 14px;
-    color: #fff;
-    background-color: #e75e8d;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-weight: 400;
-    transition: all .3s;
-    text-decoration: none;
+.top-downloaded {
+    border-radius: 23px;
+    background-color: #1f2122;
+    padding: 30px;
+    max-height: 567px;
+    min-height: 567px;
 }
-
-.discover-btn:hover {
-    background-color: #fff;
-    color: #e75e8d;
+.top-downloaded ul{
+    list-style: none;
 }
-
-.item {
-    border-bottom: 1px solid #27292a;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-}
-.item ul{
-    margin-bottom: 0px;
+.top-downloaded ul li{
+    position: relative;
     display: flex;
-     gap: 100px;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #27292a;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
 }
-.item ul li {
-     list-style: none;
+.top-downloaded ul li h4{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    color: white;
 }
-.item ul li span{
+.top-downloaded ul li h6{
     color: #666;
     display: block;
     margin-top: 7px;
     font-weight: 400;
 }
-.item ul li:first-child {
-    width: 110px;
+.top-downloaded ul li img{
+    border-radius: 23px;
 }
-.item ul li img{
-    margin-top: -30px;
-    border-radius: 20px;
-}
-.downloads{
-    font-size: 16px;
-    background: transparent;
-    border: 1px solid #666;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-weight: 400;
-    cursor: pointer;
+.download a i{
+    margin-top: 50px;
+        transform: translateY(-23px);
+        width: 46px;
+        height: 46px;
+        text-align: center;
+        line-height: 46px;
+        color: #ec6090;
+        background-color: #27292a;
+        border-radius: 50%;
 
-}
-.second-btn{
-    border: 1px solid #e75e8d;
-}
-.downloads a{
-    color: #666;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-}
-.second-btn a{
-    color: #e75e8d;
 }
