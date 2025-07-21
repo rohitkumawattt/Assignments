@@ -1,0 +1,104 @@
+.task-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #007bff; /* Default accent color */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task-item .task-description {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.task-item .task-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.task-item .task-priority {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+}
+
+.priority-low { background-color: #28a745; } /* Green */
+.priority-medium { background-color: #ffc107; } /* Yellow */
+.priority-high { background-color: #dc3545; } /* Red */
+
+.task-item .task-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e9ecef;
+}
+
+/* Status-specific styling for task-item border */
+.task-item.status-pending {
+  border-left-color: #6c757d; /* Grey */
+}
+
+.task-item.status-in-progress {
+  border-left-color: #ffc107; /* Yellow */
+}
+
+.task-item.status-completed {
+  border-left-color: #28a745; /* Green */
+}
+
+
+.task-item .task-actions button,
+.task-item .task-actions select {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.task-item .task-actions button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-item .task-actions button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.task-item .task-actions button:nth-of-type(2) { /* Delete button */
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-item .task-actions button:nth-of-type(2):hover {
+  background-color: #c82333;
+}
+
+.task-item .task-actions select {
+  background-color: #e9ecef;
+  color: #333;
+  border: 1px solid #ced4da;
+}
+
+.task-item .task-actions select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

@@ -1,0 +1,76 @@
+.task-manager-app {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* TaskForm styles */
+.task-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.task-form-container form div {
+  margin-bottom: 15px;
+}
+
+.task-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.task-form-container input[type="text"],
+.task-form-container textarea,
+.task-form-container select {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.task-form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.task-form-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.task-form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* TaskList styles */
+.task-list-container {
+  margin-top: 20px;
+}
+
+.task-list-container p {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
